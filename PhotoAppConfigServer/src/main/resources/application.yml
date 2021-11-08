@@ -1,0 +1,14 @@
+server:
+  port: 8012
+spring:
+  application:
+    name: PhotoAppConfigServer
+  cloud:
+    config:
+      server:
+        git:
+          clone-on-start: true
+          default-label: feature
+          password: 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
+          uri: https://github.com/grootenthu/CommonConfig
+          username: grootenthu

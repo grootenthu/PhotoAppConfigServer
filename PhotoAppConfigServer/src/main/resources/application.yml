@@ -1,6 +1,9 @@
 server:
   port: 8012
 spring:
+  profiles:
+    active:
+    - native
   application:
     name: PhotoAppConfigServer
   cloud:
@@ -12,6 +15,9 @@ spring:
           password: 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
           uri: https://github.com/grootenthu/CommonConfig
           username: grootenthu
+        native:
+          search-locations:
+          - file://${user.home}/config_server
   rabbitmq:
     host: localhost
     port: 5672

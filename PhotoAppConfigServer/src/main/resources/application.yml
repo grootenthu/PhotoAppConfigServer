@@ -12,3 +12,14 @@ spring:
           password: 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
           uri: https://github.com/grootenthu/CommonConfig
           username: grootenthu
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - busrefresh
